@@ -1,0 +1,5 @@
+word = str(input("Digite uma palavra para vê-la ao contrário: "))
+list1 = list(word)
+list1.reverse()
+print("AO CONTRÁRIO:")
+print(list1)
