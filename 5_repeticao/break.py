@@ -1,4 +1,4 @@
-def loopFor():
+def loop_for():
 
     for num in range(1, 10):
 
@@ -8,11 +8,11 @@ def loopFor():
         else:
             print(num)
 
-def loopWhile():
+def loop_while():
 
     while True:
 
-        loopFor()
+        loop_for()
         option = input("Digite 'sair' para sair: ")
 
         if option == 'sair':
@@ -21,4 +21,4 @@ def loopWhile():
 
     print('Sai do loop')
 
-loopWhile()
+loop_while()
