@@ -5,9 +5,9 @@ print("")
 
 words = text.split()
 analyzer = Counter(words)
-mostPresent = analyzer.most_common()
+most_present = analyzer.most_common()
 
-for value, item in enumerate(mostPresent):
+for value, item in enumerate(most_present):
 
     word = item[0]
     frequency = item[1]

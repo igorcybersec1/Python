@@ -1,37 +1,37 @@
-quantitySum = int(input("Quantos números você irá somar? "))
-quantitySubtract = int(input("Quantos números você vai subtrair? "))
+quantity_sum = int(input("Quantos números você irá somar? "))
+quantity_subtract = int(input("Quantos números você vai subtrair? "))
 print("")
 
-sumList = []
-subtractList = []
+sum_list = []
+subtract_list = []
 
-for adder in range(quantitySum):
+for adder in range(quantity_sum):
 
     number = int(input(f"Digite o {adder + 1}º número para soma: "))
-    sumList.append(number)
+    sum_list.append(number)
 
 print(" ")
 
-for value in range(quantitySubtract):
+for value in range(quantity_subtract):
 
     digit = int(input(f"Digite o {value + 1} número para subtrair: "))
-    subtractList.append(digit)
+    subtract_list.append(digit)
 
 result: int = 0
 
-for adder2 in range(len(sumList)):
-    result += sumList[adder2]
+for adder2 in range(len(sum_list)):
+    result += sum_list[adder2]
 
-for value2 in range(len(subtractList)):
-    result -= subtractList[value2]
+for value2 in range(len(subtract_list)):
+    result -= subtract_list[value2]
 
-maxSum = max(sumList)
-maxSub = max(subtractList)
-totalList = sumList + subtractList
-minTotal = min(totalList)
+max_sum = max(sum_list)
+max_subtracted = max(subtract_list)
+total_list = sum_list + subtract_list
+minimum_total = min(totalList)
 
 print(" ")
 print(f"O RESULTADO É {result}")
-print(f"MAIOR VALOR SOMADO: {maxSum}")
-print(f"MAIOR VALOR SUBTRAÍDO: {maxSub}")
-print(f"MENOR VALOR DIGITADO: {minTotal}")
+print(f"MAIOR VALOR SOMADO: {max_sum}")
+print(f"MAIOR VALOR SUBTRAÍDO: {max_subtracted}")
+print(f"MENOR VALOR DIGITADO: {minimum_total}")
